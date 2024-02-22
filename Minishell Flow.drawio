@@ -1,0 +1,445 @@
+<mxfile host="app.diagrams.net" modified="2024-02-13T19:14:51.285Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="j3NCMNUEObqpgYQ1papl" version="23.1.4" type="device">
+  <diagram name="Page-1" id="MSwrph2fDFesN9oIkVDd">
+    <mxGraphModel dx="2206" dy="1148" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-1" value="ls -l|&quot;grep a&quot;&amp;gt;outfile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="40" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="PnxerrXb5VSLIQRsMcsY-1" target="PnxerrXb5VSLIQRsMcsY-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="170" as="sourcePoint" />
+            <mxPoint x="240" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="240" y="40" width="400" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-6" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Allocates pointer size of&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;(input + n&lt;sub&gt;operators&lt;/sub&gt;&amp;nbsp;x 2)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="80" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-7" value="LEXER" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="240" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-8" value="ls -l|&quot;grep a&quot;&amp;gt;outfile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="262.5" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="257.5" y="170" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-12" value="ls -l | &quot;grep a&quot; &amp;gt; outfile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="442" y="170" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-14" value="Copies input to allocated space, adding a space before and after each operator, respecting &quot; and &#39;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="414" y="65" width="186" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-16" value="ls -l|&quot;grep a&quot;&amp;gt;outfile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="447" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PnxerrXb5VSLIQRsMcsY-6" target="PnxerrXb5VSLIQRsMcsY-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="200" as="sourcePoint" />
+            <mxPoint x="440" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-22" value="Splits the new string into an array, using space as the separator" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="437" y="220" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PnxerrXb5VSLIQRsMcsY-14" target="PnxerrXb5VSLIQRsMcsY-22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="150" as="sourcePoint" />
+            <mxPoint x="730" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="95" />
+              <mxPoint x="620" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-25" value="ls -l | &quot;grep a&quot; &amp;gt; outfile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="442" y="270" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-26" value="ls&lt;div&gt;-l&lt;/div&gt;&lt;div&gt;|&lt;/div&gt;&lt;div&gt;&quot;grep a&quot;&lt;/div&gt;&lt;div&gt;&amp;gt;&lt;/div&gt;&lt;div&gt;outfile&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="477" y="320" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" source="PnxerrXb5VSLIQRsMcsY-25" target="PnxerrXb5VSLIQRsMcsY-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="280" as="sourcePoint" />
+            <mxPoint x="460" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="290" />
+              <mxPoint x="590" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-28" value="&amp;nbsp;split&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;labelBackgroundColor=#e1d5e7;" parent="PnxerrXb5VSLIQRsMcsY-27" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-29" value="Frees the allocated memory and returns the array" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="257.5" y="220" width="122.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-30" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="PnxerrXb5VSLIQRsMcsY-22" target="PnxerrXb5VSLIQRsMcsY-29" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-31" value="ls&lt;div&gt;-l&lt;/div&gt;&lt;div&gt;|&lt;/div&gt;&lt;div&gt;&quot;grep a&quot;&lt;/div&gt;&lt;div&gt;&amp;gt;&lt;/div&gt;&lt;div&gt;outfile&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="292.5" y="280" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="PnxerrXb5VSLIQRsMcsY-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="230" as="sourcePoint" />
+            <mxPoint x="160" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-33" value="ls&lt;div&gt;-l&lt;/div&gt;&lt;div&gt;|&lt;/div&gt;&lt;div&gt;&quot;grep a&quot;&lt;/div&gt;&lt;div&gt;&amp;gt;&lt;/div&gt;&lt;div&gt;outfile&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="710" y="175" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.166;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="PnxerrXb5VSLIQRsMcsY-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="860" y="240" as="sourcePoint" />
+            <mxPoint x="839.46" y="229.5999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-35" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="840" y="40" width="540" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-36" value="PARSER" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="840" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-37" value="&lt;div&gt;Creates and initializes the first node of a linked list&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="890" y="80" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-38" value="{&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= NULL&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="930" y="120" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-39" value="ls&lt;div&gt;-l&lt;/div&gt;&lt;div&gt;|&lt;/div&gt;&lt;div&gt;&quot;grep a&quot;&lt;/div&gt;&lt;div&gt;&amp;gt;&lt;/div&gt;&lt;div&gt;outfile&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="120" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-40" value="Assigns each token to it&#39;s respective variable until the end or a pipe ( | ) is found." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="80" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-42" value="ls&lt;div&gt;-l&lt;/div&gt;&lt;div&gt;|&lt;/div&gt;&lt;div&gt;&quot;grep a&quot;&lt;/div&gt;&lt;div&gt;&amp;gt;&lt;/div&gt;&lt;div&gt;outfile&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="860" y="120" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-43" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PnxerrXb5VSLIQRsMcsY-37" target="PnxerrXb5VSLIQRsMcsY-40" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="250" as="sourcePoint" />
+            <mxPoint x="980" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-47" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= ls, -l&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="120" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PnxerrXb5VSLIQRsMcsY-40" target="PnxerrXb5VSLIQRsMcsY-49" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="230" as="sourcePoint" />
+            <mxPoint x="1400" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1370" y="95" />
+              <mxPoint x="1370" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-49" value="When a pipe is found, a new node is created and the process repeats until there are no more tokens" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="270" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-50" value="ls&lt;div&gt;-l&lt;/div&gt;&lt;div&gt;|&lt;/div&gt;&lt;div&gt;&quot;grep a&quot;&lt;/div&gt;&lt;div&gt;&amp;gt;&lt;/div&gt;&lt;div&gt;outfile&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="350" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-51" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= ls, -l&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="335" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-52" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= &quot;grep a&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= outfile&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="480" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-53" value="Frees the array (and the strings inside it) given by the lexer. Returns the first node" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="870" y="285" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-54" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= ls, -l&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="900" y="335" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-55" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= &quot;grep a&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;*infile &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= NULL&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= outfile&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="900" y="480" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="PnxerrXb5VSLIQRsMcsY-49" target="PnxerrXb5VSLIQRsMcsY-53" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="430" as="sourcePoint" />
+            <mxPoint x="1080" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-58" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="PnxerrXb5VSLIQRsMcsY-16" target="PnxerrXb5VSLIQRsMcsY-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="230" as="sourcePoint" />
+            <mxPoint x="740" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="140" />
+              <mxPoint x="590" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-59" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=#ffe6cc;fontColor=#d79b00;labelBorderColor=#d79b00;" parent="1" edge="1">
+          <mxGeometry x="0.3175" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="440" as="sourcePoint" />
+            <mxPoint x="1060" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1083" y="440" />
+              <mxPoint x="1083" y="490" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PnxerrXb5VSLIQRsMcsY-60" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#d79b00;labelBackgroundColor=#ffe6cc;labelBorderColor=#d79b00;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="600" as="sourcePoint" />
+            <mxPoint x="920" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="890" y="600" />
+              <mxPoint x="890" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkX7nCaBHHFJlHcYDfu2-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.005;exitY=0.842;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1787.8399999999997" y="329.99" as="sourcePoint" />
+            <mxPoint x="1837.84" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkX7nCaBHHFJlHcYDfu2-2" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= ls, -l&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1437.84" y="260" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NkX7nCaBHHFJlHcYDfu2-3" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= &quot;grep a&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= outfile&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1617.84" y="260" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NkX7nCaBHHFJlHcYDfu2-4" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=#ffe6cc;fontColor=#d79b00;labelBorderColor=#d79b00;startArrow=classic;startFill=1;" parent="1" edge="1">
+          <mxGeometry x="0.053" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1727.84" y="400" as="sourcePoint" />
+            <mxPoint x="1567.84" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1727.84" y="420" />
+              <mxPoint x="1567.84" y="420" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LrFDLf4efG3-qtHMbSmY-9" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Data Struct Explanation&lt;/span&gt;&lt;/h1&gt;char **args → stores the cmd name in the first string. The remaining strings are the arguments for the command;&lt;br&gt;int fd[2] → stores the stdin and stdout file descriptors;&lt;br&gt;char *infile → stores infile name to open later;&lt;br&gt;char *outfile → stores outfile name to open later;&lt;br&gt;struct name *next → points to next node;&lt;br&gt;struct name *prev → points to previous node;&lt;br&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1400" y="40" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.004;exitY=0.878;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1379.9999999999998" y="330.0000000000002" as="sourcePoint" />
+            <mxPoint x="1437.84" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="120" width="800" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-3" value="EXPANDER" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="120" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-6" value="Checks each string in args for single quotes ( &#39; ), double quotes ( &quot; ) or dollar signs ($)." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1850" y="150" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-7" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= ls, -l&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="200" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-8" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= &quot;grep a&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;*infile &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= NULL&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= outfile&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="345" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-9" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=#ffe6cc;fontColor=#d79b00;labelBorderColor=#d79b00;" edge="1" parent="1">
+          <mxGeometry x="0.3175" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2010" y="305" as="sourcePoint" />
+            <mxPoint x="2040" y="355" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2063" y="305" />
+              <mxPoint x="2063" y="355" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-10" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#d79b00;labelBackgroundColor=#ffe6cc;labelBorderColor=#d79b00;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1900" y="465" as="sourcePoint" />
+            <mxPoint x="1900" y="335" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1870" y="465" />
+              <mxPoint x="1870" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-29" value="&amp;nbsp;if&amp;nbsp;" style="endArrow=none;html=1;rounded=0;fontSize=13;labelBackgroundColor=#f5f5f5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2090" y="330" as="sourcePoint" />
+            <mxPoint x="2130" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-30" value="&amp;nbsp;single quote is found&amp;nbsp;" style="endArrow=classic;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#6c8ebf;labelBackgroundColor=#f5f5f5;" edge="1" parent="1">
+          <mxGeometry x="0.2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2130" y="330" as="sourcePoint" />
+            <mxPoint x="2290" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2130" y="410" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-31" value="&amp;nbsp;dollar sign is found&amp;nbsp;" style="endArrow=classic;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#b85450;labelBackgroundColor=#f5f5f5;" edge="1" parent="1">
+          <mxGeometry x="0.3333" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2130" y="330" as="sourcePoint" />
+            <mxPoint x="2290" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2130" y="250" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-32" value="&amp;nbsp;double quote is found&amp;nbsp;" style="endArrow=none;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#82b366;labelBackgroundColor=#f5f5f5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2130" y="330" as="sourcePoint" />
+            <mxPoint x="2270" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-33" value="&amp;nbsp;if&amp;nbsp;" style="endArrow=classic;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#82b366;labelBackgroundColor=#f5f5f5;" edge="1" parent="1">
+          <mxGeometry x="0.1667" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2270" y="330" as="sourcePoint" />
+            <mxPoint x="2210" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2270" y="290" />
+              <mxPoint x="2210" y="290" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-34" value="&amp;nbsp;else&amp;nbsp;" style="endArrow=classic;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#82b366;labelBackgroundColor=#f5f5f5;" edge="1" parent="1">
+          <mxGeometry x="0.1667" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2270" y="330" as="sourcePoint" />
+            <mxPoint x="2330" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2270" y="370" />
+              <mxPoint x="2330" y="370" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-35" value="remove quotes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="390" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-36" value="&amp;nbsp;then&amp;nbsp;" style="endArrow=classic;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#82b366;labelBackgroundColor=#f5f5f5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2350" y="270" as="sourcePoint" />
+            <mxPoint x="2350" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-37" value="expands" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="230" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-38" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= ls, -l&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="200" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-39" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= grep a&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;*infile &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= NULL&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= outfile&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="345" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-40" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=#ffe6cc;fontColor=#d79b00;labelBorderColor=#d79b00;" edge="1" parent="1">
+          <mxGeometry x="0.3175" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2550" y="305" as="sourcePoint" />
+            <mxPoint x="2580" y="355" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2603" y="305" />
+              <mxPoint x="2603" y="355" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-41" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#d79b00;labelBackgroundColor=#ffe6cc;labelBorderColor=#d79b00;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2440" y="465" as="sourcePoint" />
+            <mxPoint x="2440" y="335" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2410" y="465" />
+              <mxPoint x="2410" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-42" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2370" y="329.5" as="sourcePoint" />
+            <mxPoint x="2400" y="329.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-43" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2640" y="329.41" as="sourcePoint" />
+            <mxPoint x="80" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2680" y="329" />
+              <mxPoint x="2680" y="680" />
+              <mxPoint x="40" y="680" />
+              <mxPoint x="40" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-44" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= ls, -l&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="80" y="890" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-45" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= grep a&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= outfile&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="260" y="890" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-46" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=#ffe6cc;fontColor=#d79b00;labelBorderColor=#d79b00;startArrow=classic;startFill=1;" edge="1" parent="1">
+          <mxGeometry x="0.053" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="1030" as="sourcePoint" />
+            <mxPoint x="210" y="1030" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="1050" />
+              <mxPoint x="210" y="1050" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="432" y="959.33" as="sourcePoint" />
+            <mxPoint x="480" y="959" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-48" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="480" y="720" width="800" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-49" value="EXECUTOR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="720" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-50" value="Checks the value of *next - if it&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="750" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-51" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= ls, -l&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*infile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= NULL&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="520" y="800" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-52" value="&lt;span style=&quot;background-color: initial;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;**args &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= &quot;grep a&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;fd[2] &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= 0, 1&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;char&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;*infile &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;= NULL&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;char&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;*outfile &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;= outfile&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *next&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;struct name *prev&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="520" y="945" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-53" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=#ffe6cc;fontColor=#d79b00;labelBorderColor=#d79b00;" edge="1" parent="1">
+          <mxGeometry x="0.3175" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="905" as="sourcePoint" />
+            <mxPoint x="680" y="955" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="703" y="905" />
+              <mxPoint x="703" y="955" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sOmUfPiC_EXfUELW3pAq-54" value="points to" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#d79b00;labelBackgroundColor=#ffe6cc;labelBorderColor=#d79b00;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="1065" as="sourcePoint" />
+            <mxPoint x="540" y="935" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="1065" />
+              <mxPoint x="510" y="935" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
