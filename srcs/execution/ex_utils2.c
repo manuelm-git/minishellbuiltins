@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ex_utils2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbraga-s <mbraga-s@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 15:41:51 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/02/16 11:45:53 by mbraga-s         ###   ########.fr       */
+/*   Updated: 2024/03/05 12:31:26 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../minishell.h"
 
-//Checks if there is an infile and/or outfile on the node
-//If there is, opens them and dups the file descriptor to stdin or stdout
-//Works for multiple infiles and outfiles
+// Checks if there is an infile and/or outfile on the node
+// If there is, opens them and dups the file descriptor to stdin or stdout
+// Works for multiple infiles and outfiles
 
 int	infile_check(int dups[2], t_data *data);
 

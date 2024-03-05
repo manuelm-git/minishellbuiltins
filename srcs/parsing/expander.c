@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   expander.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbraga-s <mbraga-s@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 12:31:37 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/02/16 16:52:43 by mbraga-s         ###   ########.fr       */
+/*   Updated: 2024/03/05 12:31:35 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ char	*rem_quotes(char *str);
 
 char	*expand(char *str, char **envp);
 
-//Checks if there are quoted or expandable strings
+// Checks if there are quoted or expandable strings
 
 void	expander(t_data *current, char **envp)
 {
-	int		j;
+	int	j;
 
 	while (current)
 	{
@@ -43,13 +43,13 @@ void	expander(t_data *current, char **envp)
 	}
 }
 
-//Removes quotes from the string by moving every character one position
-//to the left and setting the last 2 to NULLs
+// Removes quotes from the string by moving every character one position
+// to the left and setting the last 2 to NULLs
 
 char	*rem_quotes(char *str)
 {
-	int		i;
-	int		len;
+	int	i;
+	int	len;
 
 	len = ft_strlen(str);
 	i = 0;
@@ -65,8 +65,8 @@ char	*rem_quotes(char *str)
 	return (str);
 }
 
-//Searchs for the string in the environment variables
-//If found, frees the string and returns a copy of the variable's value
+// Searchs for the string in the environment variables
+// If found, frees the string and returns a copy of the variable's value
 
 char	*expand(char *str, char **envp)
 {

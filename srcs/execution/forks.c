@@ -6,7 +6,7 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 15:41:19 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/02/21 17:14:18 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/05 12:31:33 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	first_fork(t_data *data, char **envp)
 	}
 	close_fd(dups);
 	data = ft_lstfirst(data);
-//	free_all(data);
+	//	free_all(data);
 	free(path);
 	exit(1);
 }

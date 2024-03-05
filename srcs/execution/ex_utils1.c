@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ex_utils1.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbraga-s <mbraga-s@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 16:45:54 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/02/16 14:33:52 by mbraga-s         ###   ########.fr       */
+/*   Updated: 2024/03/05 12:31:28 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../minishell.h"
 
-//closes a pair of file descriptors
+// closes a pair of file descriptors
 
 void	close_fd(int *fd)
 {
@@ -20,7 +20,7 @@ void	close_fd(int *fd)
 	close(fd[1]);
 }
 
-//Protection for the dup2 command (separated from code to save lines)
+// Protection for the dup2 command (separated from code to save lines)
 
 int	dupcheck(int file_fd, int fd)
 {
@@ -32,7 +32,7 @@ int	dupcheck(int file_fd, int fd)
 	return (i);
 }
 
-//Runs through the environment variables looking for PATH.
+// Runs through the environment variables looking for PATH.
 
 char	*check_path(char *arg, char **envp)
 {
@@ -63,9 +63,9 @@ char	*check_path(char *arg, char **envp)
 	return (ft_strdup(arg));
 }
 
-//Goes through every path in PATH variable (from environment variables)
-//and joins the cmd to it. Then it tries to access that path.
-//If it succedes it returns that path otherwise it tries with the next
+// Goes through every path in PATH variable (from environment variables)
+// and joins the cmd to it. Then it tries to access that path.
+// If it succedes it returns that path otherwise it tries with the next
 
 char	*pathtest(char *env, char *arg)
 {
@@ -92,7 +92,7 @@ char	*pathtest(char *env, char *arg)
 	return (NULL);
 }
 
-//Checks if the cmd given was already a path (if it had a /)
+// Checks if the cmd given was already a path (if it had a /)
 
 int	pcheck(char *ptr)
 {

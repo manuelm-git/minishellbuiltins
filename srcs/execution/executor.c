@@ -6,13 +6,13 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 12:31:02 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/02/22 16:13:03 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/05 12:31:31 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../minishell.h"
 
-//Checks if the cmd given is one of the built-ins and, if it is, runs it
+// Checks if the cmd given is one of the built-ins and, if it is, runs it
 
 int	check_builtin(t_data *data)
 {
@@ -33,20 +33,20 @@ int	check_builtin(t_data *data)
 			exec_exit(data);
 			return (1);
 		}
-		else if	(!ft_strncmp(data->args[0],"echo",5))
+		else if (!ft_strncmp(data->args[0], "echo", 5))
 		{
 			exec_echo(data);
-			return(1);
-		}	
-		else if	(!ft_strncmp(data->args[0],"env",4))
+			return (1);
+		}
+		else if (!ft_strncmp(data->args[0], "env", 4))
 		{
 			exec_env(data);
-			return(1);
+			return (1);
 		}
-		else if	(!ft_strncmp(data->args[0],"export",7))
+		else if (!ft_strncmp(data->args[0], "export", 7))
 		{
 			exec_export(data);
-			return(1);
+			return (1);
 		}
 	}
 	return (0);
