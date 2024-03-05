@@ -4,10 +4,18 @@
 
 /* int	main(int argc, char **argv)
 {
-	int		i;
-	char	**tokens;
-	t_data	*data;
-	t_data	*current;
+	int				i;
+	char			**tokens;
+	t_data			*data;
+	t_data			*current;
+	char			*input;
+	int				i;
+	char			**tokens;
+	t_data			*data;
+	t_data			*current;
+	char			**tokens;
+	t_data			*data;
+	static t_data	data;
 
 	i = 0;
 	tokens = NULL;
@@ -61,17 +69,9 @@
 	}
 	return (0);
 } */
-
 // main for testing parsing and expander (with readline)
-
 /* int	main(void)
 {
-	char	*input;
-	int		i;
-	char	**tokens;
-	t_data	*data;
-	t_data	*current;
-
 	tokens = NULL;
 	data = NULL;
 	i = 0;
@@ -107,14 +107,9 @@
 	}
 	return (0);
 } */
-
 // main for testing executor (with argv, argc)
-
 /* int	main(int argc, char **argv, char **env)
 {
-	char	**tokens;
-	t_data	*data;
-
 	tokens = NULL;
 	data = NULL;
 	if (argc >= 2)
@@ -127,18 +122,24 @@
 	}
 	return (0);
 } */
-
 // main for testing executor (with readline)
+t_data	*minishelldata(void)
+{
+	static t_data data;
+
+	return (&data);
+}
 
 int	main(int argc, char **argv, char **env)
 {
 	char	*input;
 	char	**tokens;
 	t_data	*data;
+
 	(void)argc;
 	(void)argv;
-
 	tokens = NULL;
+	minishelldata()->envp = dpdup(env);
 	while (1)
 	{
 		input = readline("\x1B[36mminishell$ \x1B[0m");
@@ -148,7 +149,7 @@ int	main(int argc, char **argv, char **env)
 		{
 			add_history(input);
 			tokens = lexer(input);
-			data = parser(tokens,env);
+			data = parser(tokens, env);
 			expander(data, env);
 			execution(data, env);
 			free_all(data);

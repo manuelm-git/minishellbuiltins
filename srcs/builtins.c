@@ -6,7 +6,7 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 18:18:32 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/02/22 17:59:29 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/05 02:41:36 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,9 +82,9 @@ void exec_env(t_data *data)
     }
     else
     {
-        while (data->envp[i])
+        while (minishelldata()->envp[i])
         {
-            printf("%s\n",data->envp[i]);
+            printf("%s\n",minishelldata()->envp[i]);
             i++;
         }
     }
@@ -104,21 +104,19 @@ void exec_echo(t_data *data)
 
     newline = 0;
     i = 1;
-
     if(data->numofargs >= 2)
     {
         if(!ft_strncmp(data->args[1],"-n",2))
-        {
             newline = 1;        
-        }
         else
         {
             while (data->args[i])
             {
                 write(1,data->args[i],ft_strlen(data->args[i]));
                 i++;
+                if(data->args[i])
+                    write(1," ",1);
             }
-            
         }
         if(newline == 0)
             write(1,"\n",1);
@@ -176,30 +174,23 @@ char **dpdup(char **str)
 		i++;
 	dup = ft_calloc(sizeof(char *), i + 1);
 	if(!dup)
-		return(0);
+		return(NULL);
 	i = 0;
 	while (str[i] != NULL)
 	{
 		dup[i] = ft_strdup(str[i]);
-		if(dup[i] == NULL)
+		if(!dup[i])
 		{
 			free_array(dup);
-			return(dup);
+			return(NULL);
 		}
 		i++;
 	}
+    dup[i] = NULL;
 	return(dup);
 }
 //obter tamanho de uma variavel double pointer (DP)
-int getdpsize(char **str)
-{
-    int i;
 
-    i = 0;
-    while(str[i])
-        i++;
-    return (i);
-}
 
 char **sortenvp(char **envpsorted,int envp_size)
 {
@@ -227,6 +218,19 @@ char **sortenvp(char **envpsorted,int envp_size)
     }
     return(envpsorted);
 }
+int searchforchar(char *str,char c)
+{
+    int i;
+
+    i = 0;
+    while (str[i])
+    {
+        if(str[i] == c)
+            return(1);
+        i++;    
+    }
+    return(0);
+}
 void printenvpsorted(char **envpsorted)
 {
     int i;
@@ -242,30 +246,41 @@ void printenvpsorted(char **envpsorted)
         {
             previouschar = envpsorted[i][j];
             write(1,&envpsorted[i][j],1);
-            if(previouschar == '=' )
+            if(previouschar == '=' || (envpsorted[i][j + 1] == '\0' && searchforchar(envpsorted[i],'=')))
             {
                 write(1,"\"",1);
             }
             j++;
         }
-        write(1,"\"",1);
         write(1,"\n",1);
         i++;
     }
     free_array(envpsorted);
 }
-void exportonly(t_data *data)
+
+int getenvpsize(char **envp)
+{
+    int envp_size;
+
+    envp_size = 0;
+
+    while(envp[envp_size] != NULL)
+        envp_size++;
+
+    return(envp_size);
+}
+void exportonly(char **envp)
 {
     char **envpsorted;
     int envp_size;
     
-    envp_size = getdpsize(data->envp);
+    envp_size = getenvpsize(envp);
+    
     envpsorted = ft_calloc((envp_size + 1),sizeof(char *));
     if(!envpsorted)
         return;
-    envpsorted = sortenvp(dpdup(data->envp),envp_size);
+    envpsorted = sortenvp(dpdup(envp),envp_size);
     printenvpsorted(envpsorted);
-    
 }
 
 void exporterror(t_data *data,char **new,int i)
@@ -276,48 +291,100 @@ void exporterror(t_data *data,char **new,int i)
     free_array(new);
 }
 
-int searchinenvp(t_data *data,char *input)
+int searchinenvp(char *input)
 {
     int i;
 
     i = 0;
-    while (data->envp[i])
+    while (minishelldata()->envp[i])
     {
-        if(ft_strncmp(data->envp[i],input,ft_strlen(input)))
+        if  (ft_strncmp(minishelldata()->envp[i],input, \
+                ft_strlen(input)) != 0)
+            i++;
+        else
             return(i);
+    }
+    return(-1);
+}
+char *rem_allquotes(char *str)
+{
+    int i = 0;
+    int j = 0;
+
+    if (str == NULL || str[0] == '\0')
+        return NULL;
+
+    while (str[i]) {
+        if (str[i] != '\"') {
+            str[j] = str[i];
+            j++;
+        }
         i++;
     }
+
+    str[j] = '\0'; // Null-terminate the modified string
+
+    return (str);
+}
+void exportwithargs(t_data *data,char **new,int i)
+{
+    char **tempenv;
+    tempenv = dpdup(minishelldata()->envp);
+    if(!new || !new[0])
+    {
+        exporterror(data,new,i);
+        return;
+    }    
+    if (searchinenvp(new[0]) == -1)
+    {
+        minishelldata()->envp = add_args(tempenv,data->args[i]);
+    }
+    if (searchinenvp(new[0]) != 1)
+    {
+        if(new[1])
+        {
+            if(new[1][0] == '\"')
+                minishelldata()->envp[getenvpsize(minishelldata()->envp) - 1] = ft_strdup(rem_allquotes(data->args[i]));
+            else  
+            {
+                minishelldata()->envp[getenvpsize(minishelldata()->envp) - 1] = ft_strdup(data->args[i]);
+            }    
+        }
+    }
+}
+
+int	digitquestionmark(int str)
+{
+
+    if (str >= '0' && str <= '9')
+        return (1);
     return(0);
 }
-// void exportwithargs(t_data *data,char **new,int i)
-// {
-//     if(!new || !new[0])
-//     {
-//         exporterror(data,new,i);
-//         return;
-//     }    
-//     if(!searchinenvp(data,new[0]))
-    
-// }
 void exec_export(t_data *data)
 {
     char **new;
     int i;
 
-    i = 0;
+    i = 1;
     if(data->numofargs < 2)
-        exportonly(data);
+        exportonly(minishelldata()->envp);
     else
     {
         while (data->args[i])
         {
             new = ft_split(data->args[i],'=');
-            if(data->args[i][0] == '=' || (new && ft_isalnum(new[0])) || ft_isdigit(&data->args[i][0]))
+            if(data->args[i][0] == '=' || (new && !ft_isalnum(new[0]))  \
+            || digitquestionmark(data->args[i][0]))
+            {
                 exporterror(data,new,i);
-            // else
-            //     exportwithargs(data,new,i);
+                printf("dei erro\n");
+            }    
+            else
+            {
+                exportwithargs(data,new,i);
+                printf("dei certo\n");
+            }                
             i++;
         }
-        
     }
 }

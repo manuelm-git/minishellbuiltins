@@ -6,7 +6,7 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 11:43:38 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/02/22 18:00:00 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/04 21:09:53 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,16 @@ typedef struct s_data
 	char 			**envp;
 }				t_data;
 
+// typedef struct s_envp
+// {
+// 	char *previous;
+// 	char *next;
+// 	char *content;
+// }	t_envp;
 
 //utils.c
+
+t_data	*minishelldata(void);
 
 void	free_all(t_data *node);
 
@@ -56,6 +64,8 @@ int 	getdpsize(char **str);
 //ex_utils1.c
 
 int		pcheck(char *ptr);
+
+char	*rem_quotes(char *str);
 
 char	*pathtest(char *env, char *arg);
 
@@ -136,7 +146,7 @@ void	ft_bzero(void *s, size_t n);
 
 size_t	ft_strlen(const char *str);
 
-t_data	*ft_lstnew(char **envp);
+t_data	*ft_lstnew();
 
 t_data	*ft_lstadd_back(t_data **lst, t_data *new);
 
