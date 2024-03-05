@@ -6,7 +6,7 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 11:43:38 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/03/05 12:31:58 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/05 12:45:05 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ void				exec_exit(t_data *data);
 
 void				exec_echo(t_data *data);
 
-void				exportonly(void);
+void				exportonly(char **envpsorted);
 
 void				exec_env(t_data *data);
 
@@ -122,7 +122,7 @@ void				expander(t_data *data, char **envp);
 
 // parser.c
 
-t_data				*parser(char **token, char **env);
+t_data				*parser(char **token);
 
 char				**add_args(char **args, char *token);
 
