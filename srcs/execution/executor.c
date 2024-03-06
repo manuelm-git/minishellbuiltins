@@ -6,7 +6,7 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 12:31:02 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/03/05 12:31:31 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/05 20:21:31 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,12 @@ int	check_builtin(t_data *data)
 			exec_export(data);
 			return (1);
 		}
+		// else if (!ft_strncmp(data->args[0], "unset", 5))
+		// {
+		// 	exec_unset(data);
+		// 	return (1);
+		// }
+		
 	}
 	return (0);
 }

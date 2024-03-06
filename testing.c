@@ -129,7 +129,10 @@ t_data	*minishelldata(void)
 
 	return (&data);
 }
-
+void clean_env()
+{
+	free_array(minishelldata()->envp);
+}
 int	main(int argc, char **argv, char **env)
 {
 	char	*input;
@@ -144,17 +147,21 @@ int	main(int argc, char **argv, char **env)
 	{
 		input = readline("\x1B[36mminishell$ \x1B[0m");
 		if (!input)
+		{
+			clean_env();
 			exit(0);
+		}	
 		if (input[0] != '\0')
 		{
 			add_history(input);
 			tokens = lexer(input);
 			data = parser(tokens);
 			expander(data, env);
-			execution(data, env);
+			execution(data, minishelldata()->envp);
 			free_all(data);
 		}
 		free(input);
 	}
+	clean_env();
 	return (0);
 }

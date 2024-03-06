@@ -6,7 +6,7 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 18:18:32 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/03/05 12:27:06 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/06 16:44:20 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ void	exec_exit(t_data *data)
 			exitcode = ft_atoi(data->args[1]);
 		}
 		free_all(ft_lstfirst(data));
+		clean_env();
 		exit(exitcode);
 	}
 	else
@@ -85,7 +86,8 @@ void	exec_env(t_data *data)
 	{
 		while (minishelldata()->envp[i])
 		{
-			printf("%s\n", minishelldata()->envp[i]);
+			if(ft_strchr(minishelldata()->envp[i],'='))
+				printf("%s\n", minishelldata()->envp[i]);
 			i++;
 		}
 	}
@@ -150,9 +152,7 @@ void	free_array(char **str)
 	int	i;
 
 	if (str == NULL)
-	{
 		return ;
-	}
 	i = 0;
 	while (str[i])
 	{
@@ -166,25 +166,25 @@ char	**dpdup(char **str)
 {
 	char	**dup;
 	size_t	i;
-
-	i = 0;
-	while (str[i] != NULL)
-		i++;
-	dup = ft_calloc(sizeof(char *), i + 1);
+	size_t  j;
+	
+	if(!str || !str[0])
+		return(NULL);
+	i = getdpsize(str);
+	dup = ft_calloc(i + 1,sizeof(char *));
 	if (!dup)
 		return (NULL);
-	i = 0;
-	while (str[i] != NULL)
+	j = 0;
+	while (str[j] != NULL)
 	{
-		dup[i] = ft_strdup(str[i]);
-		if (!dup[i])
+		dup[j] = ft_strdup(str[j]);
+		if (!dup[j])
 		{
 			free_array(dup);
 			return (NULL);
 		}
-		i++;
+		j++;
 	}
-	dup[i] = NULL;
 	return (dup);
 }
 // obter tamanho de uma variavel double pointer (DP)
@@ -253,29 +253,26 @@ void	printenvpsorted(char **envpsorted)
 		write(1, "\n", 1);
 		i++;
 	}
-	free_array(envpsorted);
 }
 
-int	getenvpsize(char **envp)
+int	getdpsize(char **dp)
 {
-	int	envp_size;
+	int	dp_size;
 
-	envp_size = 0;
-	while (envp[envp_size] != NULL)
-		envp_size++;
-	return (envp_size);
+	dp_size = 0;
+	while (dp[dp_size] != NULL)
+		dp_size++;
+	return (dp_size);
 }
 void	exportonly(char **envp)
 {
 	char	**envpsorted;
 	int		envp_size;
 
-	envp_size = getenvpsize(envp);
-	envpsorted = ft_calloc((envp_size + 1), sizeof(char *));
-	if (!envpsorted)
-		return ;
+	envp_size = getdpsize(envp);
 	envpsorted = sortenvp(dpdup(envp), envp_size);
 	printenvpsorted(envpsorted);
+	free_array(envpsorted);
 }
 
 void	exporterror(t_data *data, char **new, int i)
@@ -286,14 +283,14 @@ void	exporterror(t_data *data, char **new, int i)
 	free_array(new);
 }
 
-int	searchinenvp(char *input)
+int	searchinenvp(char *input, char **envp)
 {
 	int	i;
 
 	i = 0;
-	while (minishelldata()->envp[i])
+	while (envp[i])
 	{
-		if (ft_strncmp(minishelldata()->envp[i], input, ft_strlen(input)) != 0)
+		if (ft_strncmp(envp[i], input, ft_strlen(input)) != 0)
 			i++;
 		else
 			return (i);
@@ -331,20 +328,22 @@ void	exportwithargs(t_data *data, char **new, int i)
 		exporterror(data, new, i);
 		return ;
 	}
-	if (searchinenvp(new[0]) == -1)
-	{
+	if (searchinenvp(new[0], minishelldata()->envp) == -1)
 		minishelldata()->envp = add_args(tempenv, data->args[i]);
-	}
-	if (searchinenvp(new[0]) != 1)
+	if (searchinenvp(new[0], minishelldata()->envp) != 1)
 	{
 		if (new[1])
 		{
 			if (new[1][0] == '\"')
-				minishelldata()->envp[getenvpsize(minishelldata()->envp)
+			{
+				free_array(minishelldata()->envp);
+				minishelldata()->envp[getdpsize(tempenv)
 					- 1] = ft_strdup(rem_allquotes(data->args[i]));
+			}
 			else
 			{
-				minishelldata()->envp[getenvpsize(minishelldata()->envp)
+				free_array(minishelldata()->envp);
+				minishelldata()->envp[getdpsize(tempenv)
 					- 1] = ft_strdup(data->args[i]);
 			}
 		}
@@ -363,7 +362,7 @@ void	exec_export(t_data *data)
 	int		i;
 
 	i = 1;
-	if (data->numofargs < 2)
+	if (!data->args[1] || data->args[1][0] == '\0')
 		exportonly(minishelldata()->envp);
 	else
 	{
@@ -382,6 +381,12 @@ void	exec_export(t_data *data)
 				printf("dei certo\n");
 			}
 			i++;
+			free_array(new);
 		}
 	}
 }
+
+// void exec_unset(t_data *data)
+// {
+// 	chec
+// }

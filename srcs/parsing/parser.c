@@ -6,7 +6,7 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 16:30:04 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/03/05 12:44:38 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/05 16:35:38 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,6 @@ t_data	*parser(char **token)
 		}
 	}
 	data->numofargs = i;
-	free_tokens(token);
+	free_array(token);
 	return (ft_lstfirst(data));
 }

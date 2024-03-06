@@ -6,7 +6,7 @@
 /*   By: manumart <manumart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 11:43:38 by mbraga-s          #+#    #+#             */
-/*   Updated: 2024/03/05 12:45:05 by manumart         ###   ########.fr       */
+/*   Updated: 2024/03/06 16:25:47 by manumart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ typedef struct s_data
 	struct s_data	*next;
 	struct s_data	*prev;
 	char			**envp;
+	char			**envpexport;
 }					t_data;
 
 // typedef struct s_envp
@@ -55,11 +56,7 @@ t_data				*minishelldata(void);
 
 void				free_all(t_data *node);
 
-void				free_tokens(char **tokens);
-
 t_data				*ft_lstfirst(t_data *lst);
-
-int					getdpsize(char **str);
 
 // ex_utils1.c
 
@@ -83,9 +80,9 @@ char				**dpdup(char **str);
 
 int					getdpsize(char **str);
 
-char				**dpdup(char **str);
-
 void				free_array(char **str);
+
+void 				clean_env();
 // executor.c
 
 void				execution(t_data *data, char **envp);
@@ -166,4 +163,5 @@ int					ft_isdigit(char *str);
 
 int					ft_atoi(char *nptr);
 
+char	*ft_strchr(const char *str, int c);
 #endif
